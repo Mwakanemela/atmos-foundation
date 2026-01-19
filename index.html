@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="Modal/style.css">
+</head>
+<body>
+    <header >
+        <div class="wrapper">
+            <h1>Atmos<span>Foundation</span></h1>
+            <button data-modal=".myModal" class="menu" id="menu">
+                &#9776;
+            </button>
+            <nav class="nav">
+                <a href="" class="active">Home</a>
+                <a href="">Blog</a>
+                <a href="">Services</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+            <div class="log-reg-btns">
+                <a href="" class="btn btn-primary">Login</a>
+                <a href="" class="btn btn-secondary">Register</a>
+            </div>
+        </div>
+        
+        
+    </header>
+
+    <!-- NAV MODAL -->
+
+    <div class="modal myModal" data-effect="slide">
+        <div class="container">
+            <div class="header">
+                <h1></h1>
+                <button class="close">&times;</button> 
+            </div>
+            <div class="content">
+                <nav class="nav">
+                    <a href="" class="active">Home</a>
+                    <a href="">Blog</a>
+                    <a href="">Services</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </nav>
+                <div class="log-reg-btns">
+                    <a href="" class="btn btn-primary">Login</a>
+                    <a href="" class="btn btn-secondary">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- END OF NAV MODAL -->
+    <script src="script.js"></script>
+    <script src="Modal/modal.js"></script>
+    <script>Modal.initElements();</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* CSS RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: rgb(209, 208, 206);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+/* END OF CSS RESET*/
+
+/* HAMBURGER MENU */
+.menu {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.menu .line {
+    height: .3em;
+    width: 2em;
+    background-color: #000014;
+    border-radius: 100em;
+}
+
+.menu .line:not(:last-of-type) {
+    margin-bottom: .25em;
+}
+
+/* END OF HAMBURGER MENU DESIGN */
+
+/* HEADER FOR SMALL SCREENS */
+header .wrapper nav, .log-reg-btns {
+    display: flex;
+    flex-direction: column;
+    
+}
+header nav {
+    position: absolute;
+    width: 60%;
+    margin-top: 5em;
+    background-color: #7373d1;
+    left: -100%;
+    transition: left 0.3s ease;
+    height: 100vh;
+}
+
+.log-reg-btns {
+    position: absolute;
+    margin-top: 5em;
+    right: 0;
+    background-color: #7373d1;
+    width: 35%;
+    margin-right: 0.5em;
+    right: -100%;
+    transition: right 0.3s ease; 
+}
+
+.cross .line:nth-child(2){
+    opacity: 0;
+}
+
+.cross .line:first-child{
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.cross .line:last-child{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+header nav a, .log-reg-btns a {
+    margin: 2em;
+}
+header {
+    position: fixed;
+    top: 0;
+    background-color: #595966;
+    width: 100%;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-slide-in {
+    left: 0;
+}
+
+.log-slide-in {
+    right: 0;
+}
+
+.wrapper {
+    width: min(75em, 100% - 2em);
+    margin-inline: auto;
+}
+
+header .wrapper h1 {
+    font-size: 1.5em;
+}
+header .wrapper h1 span {
+    color: #7373d1;
+}
+
+@media (min-width: 50em) { 
+    header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper {
+    width: min(75em, 100% - 2em);
+    margin-inline: auto;
+}
+.menu {
+    display: none;
+}
+}
