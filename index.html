@@ -66,7 +66,7 @@
 
     <section class="contact-form">
         <div class="container">
-            <form action="https://formspree.io/f/xzddgbaa" method="post">
+            <form action="https://formspree.io/f/xzddgbaa" method="post" id="contact">
 
                 <label for="fname">Full Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your fullname..." required>
@@ -87,5 +87,26 @@
     <script src="script.js"></script>
     <script src="Modal/modal.js"></script>
     <script>Modal.initElements();</script>
+    <script>
+        const form = document.getElementById('contact');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // stop default submission
+
+            const res = await fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (res.ok) {
+                alert('Message sent!');
+                form.reset(); // <-- clears all fields
+            } else {
+                alert('Oops, something went wrong.');
+            }
+        });
+    </script>
+
 </body>
 </html>
