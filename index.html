@@ -6,6 +6,7 @@
     <title>AtmosFoundation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Modal/style.css">
+    <link rel="stylesheet" href="JavaScript-Toast-Library/style.csss">
 </head>
 <body>
     <header >
@@ -87,9 +88,14 @@
     <script src="script.js"></script>
     <script src="Modal/modal.js"></script>
     <script>Modal.initElements();</script>
+    <script src="MToasts.js"></script>
     <script>
         const form = document.getElementById('contact');
 
+        const toasts = new MToast({
+            position: "top-center",
+        })
+        
         form.addEventListener('submit', async (e) => {
             e.preventDefault(); // stop default submission
 
@@ -100,10 +106,26 @@
             });
 
             if (res.ok) {
-                alert('Message sent!');
+                // alert('Message sent!');
+                toasts.push({
+                    title: "AtmosFoundation",
+                    content: "Message sent!",
+                    width: 300,
+                    style: "success",
+                    dismissAfter: "5s"
+
+                })
                 form.reset(); // <-- clears all fields
             } else {
-                alert('Oops, something went wrong.');
+                // alert('Oops, something went wrong.');
+                toasts.push({
+                    title: "AtmosFoundation",
+                    content: "Oops, something went wrong.",
+                    width: 300,
+                    style: "error",
+                    dismissAfter: "5s"
+
+                })
             }
         });
     </script>
