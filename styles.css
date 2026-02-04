@@ -131,6 +131,7 @@ img {
 }
 .executive-board-container {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-inline: 2rem;
     display: flex;
     justify-content: center;
