@@ -84,7 +84,7 @@ header .wrapper .log-reg-btns {
 
 .active {
     font-weight: 700;
-    color: #0D38F8;
+    color: #505670;
 }
 img {
     width: 100%;
@@ -99,7 +99,7 @@ img {
     content: "";
     position: absolute;
     inset: 0; /* covers entire container */
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.7);
 }
 .hero .hero-content {
     position: absolute;
@@ -115,6 +115,10 @@ img {
     color: white;
     font-size: 1.2em;
     text-align: center;
+}
+
+.hero .hero-content p span{
+    color: #071657;
 }
 .hero img {
     height: 100%;
@@ -177,5 +181,9 @@ input[type=submit]:hover {
     .content {
         display: flex;
         justify-content: space-around;
+    }
+
+    .hero .hero-content p {
+        font-size: 1rem;
     }
 }
