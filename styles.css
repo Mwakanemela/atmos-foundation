@@ -147,29 +147,8 @@ img {
 .center-text {
     text-align: center;
 }
-.executive-board-container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-inline: 2rem;
-    display: flex;
-    justify-content: center;
-}
-.executive-board-container h2 {
-    text-align: center;
-}
-.executive-board-container .executive-board{
-    width: 300px;
-    display: flex;
-    gap: 10px;
-}
-.executive-board-container .executive-board .executive-board-img {
-    width: 40%;
-    border-radius: 10px;
-}
 
-.executive-board-container .executive-board .executive-board-img img{
-    border-radius: 10px;
-}
+
 /* CONTACT FORM */
 .contact-form {
     margin-bottom: 2rem;
