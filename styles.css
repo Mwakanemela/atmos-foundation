@@ -147,7 +147,10 @@ img {
 .center-text {
     text-align: center;
 }
-
+.executive-board-container {
+    margin-top: 5rem;
+    background-color: #04AA6D;
+}
 
 /* CONTACT FORM */
 .contact-form {
