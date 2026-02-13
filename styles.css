@@ -48,9 +48,9 @@ header {
     z-index: 10;
     background-color: #756f6f;
 }
-header .wrapper h1 {
-    font-size: 2em;
-}
+/* header .wrapper h1 {
+    font-size: clamp(1.4rem, 4vw, 4rem);
+} */
 header .wrapper h1 span {
     color: rgb(127, 104, 231);
 }
@@ -112,6 +112,7 @@ img {
 .hero .hero-content h2 { 
     color: white;
     text-align: center;
+    font-size: clamp(1.4rem, 4vw, 4rem)
 }
 .hero .hero-content p {
     color: white;
@@ -119,14 +120,25 @@ img {
     text-align: center;
 }
 
-.hero .hero-content p span{
-    color: #071657;
-}
 .hero img {
     height: 100%;
-    /* object-fit: contain; */
+    object-fit: contain;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+}
+/* ABOUT SECTION */
+.about h2 {
+    text-align: center;
 }
 
+.about p {
+    text-align: center;
+    color: rgb(78, 69, 69);
+}
+
+.about p span{
+    color: #071657;
+}
 /* EXECUTIVE BOARD */
 .center-text {
     text-align: center;
