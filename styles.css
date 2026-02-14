@@ -48,11 +48,9 @@ header {
     z-index: 10;
     background-color: #756f6f;
 }
-/* header .wrapper h1 {
-    font-size: clamp(1.4rem, 4vw, 4rem);
-} */
-header .wrapper h1 span {
-    color: rgb(127, 104, 231);
+header .wrapper h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    color: #0af39d;
 }
 
 header .wrapper nav {
