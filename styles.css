@@ -153,6 +153,9 @@ img {
 .executive-board-container h2 {
     background-color: #04AA6D;
 }
+.profile-card-container {
+    display: flex;
+}
 .profile-card {
     width: 200px;
     height: 250px;
@@ -163,11 +166,13 @@ img {
     flex-direction: column;
     box-sizing: border-box;
     background-color: white;
+    overflow: hidden;
 }
 
 .profile-card .profile-image {
     flex-basis: 60%;
     border-radius: 10px;
+    height: 50%;
 }
 
 .profile-card .profile-image img {
@@ -175,6 +180,12 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+.profile-card .profile-body {
+    flex-basis: 40%;
+}
+.profile-card .profile-body p{
+    color: gray;
 }
 
 /* CONTACT FORM */
