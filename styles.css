@@ -156,8 +156,12 @@ img {
 .profile-card .profile-body {
     flex-basis: 40%;
 }
+.profile-card .profile-body h3{
+    font-size: 17px;
+}
 .profile-card .profile-body p{
     color: gray;
+    font-size: 14px
 }
 
 /* CONTACT FORM */
