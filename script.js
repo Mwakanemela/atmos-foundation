@@ -11,3 +11,13 @@ menu.addEventListener("click", function(event) {
 
     
 });
+
+const container = document.querySelector('.card-container');
+
+function scrollNext() {
+  container.scrollBy({ left: 300, behavior: 'smooth' });
+}
+
+function scrollPrev() {
+  container.scrollBy({ left: -300, behavior: 'smooth' });
+}
