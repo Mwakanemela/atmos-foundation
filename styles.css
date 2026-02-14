@@ -149,7 +149,26 @@ img {
 }
 .executive-board-container {
     margin-top: 5rem;
+}
+.executive-board-container h2 {
     background-color: #04AA6D;
+}
+.profile-card {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.profile-card .profile-image {
+    width: 100%;
+    height: 50%;
+}
+
+.profile-card .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* CONTACT FORM */
